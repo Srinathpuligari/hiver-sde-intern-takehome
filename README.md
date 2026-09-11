@@ -31,6 +31,8 @@ pytest -q
 
 This verifies the full pipeline in seconds. Fixture outputs are clearly marked `fixture_only` and **must not** be used as assignment results.
 
+The optional Gemini judge additionally requires `pip install -r requirements-judge.txt` and a local `GEMINI_API_KEY`.
+
 For headline results, download `twcs.csv` from Kaggle's `thoughtvector/customer-support-on-twitter` into `data/raw/` (or use `kaggle datasets download -d thoughtvector/customer-support-on-twitter -p data/raw` and unzip it), then run:
 
 ```powershell
