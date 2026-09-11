@@ -8,7 +8,7 @@ This submission selects **AmazonHelp** from a 120,000-tweet TWCS subsample, reco
 
 ## Architecture
 
-The pipeline selects a brand from customer-to-agent reply pairs, groups records by thread root, and splits **by thread**. The simple baseline is word TF–IDF/logistic regression; the production classifier combines word and character TF–IDF features with logistic regression, making it more resilient to Twitter spelling variation. Retrieval is TF–IDF cosine similarity by default (fast and no model download).
+The pipeline selects a brand from customer-to-agent reply pairs, groups records by thread root, and splits **by thread**. The simple baseline is word TF–IDF/logistic regression; the production classifier combines word and character TF–IDF features with logistic regression, making it more resilient to Twitter spelling variation. Retrieval is TF–IDF cosine similarity by default (fast and no model download). Sentence-transformers and FAISS are intentionally not required for the reproducible baseline.
 
 The deliberately conservative policy escalates security, payment, and multi-issue messages; it also escalates low classifier confidence or weak retrieval. Drafts are deterministic, evidence-bounded templates by default. Gemini is used only for the optional structured reply-quality judge; the core agent does not require an API key.
 
