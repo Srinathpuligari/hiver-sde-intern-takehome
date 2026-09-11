@@ -13,10 +13,10 @@ train = pd.read_csv("artifacts/retrieval_cases.csv")
 gold = pd.read_csv("data/golden_annotated.csv")
 specs = {
     "word_tfidf_lr": TfidfVectorizer(ngram_range=(1, 2), min_df=1, sublinear_tf=True, max_features=100000),
-    "char_tfidf_lr": TfidfVectorizer(analyzer="char_wb", ngram_range=(3, 5), min_df=2, sublinear_tf=True, max_features=150000),
+    "char_tfidf_lr": TfidfVectorizer(analyzer="char_wb", ngram_range=(3, 5), min_df=1, sublinear_tf=True, max_features=150000),
     "hybrid_word_char_tfidf_lr": FeatureUnion([
         ("word", TfidfVectorizer(ngram_range=(1, 2), min_df=1, sublinear_tf=True, max_features=75000)),
-        ("char", TfidfVectorizer(analyzer="char_wb", ngram_range=(3, 5), min_df=2, sublinear_tf=True, max_features=100000)),
+        ("char", TfidfVectorizer(analyzer="char_wb", ngram_range=(3, 5), min_df=1, sublinear_tf=True, max_features=100000)),
     ]),
 }
 results = {}

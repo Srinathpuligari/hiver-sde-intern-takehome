@@ -33,7 +33,7 @@ def train_classifier(texts, labels):
     # word n-grams retain the interpretable support phrases used by the baseline.
     features = FeatureUnion([
         ("word", TfidfVectorizer(ngram_range=(1, 2), min_df=1, sublinear_tf=True, max_features=75000)),
-        ("char", TfidfVectorizer(analyzer="char_wb", ngram_range=(3, 5), min_df=2, sublinear_tf=True, max_features=100000)),
+        ("char", TfidfVectorizer(analyzer="char_wb", ngram_range=(3, 5), min_df=1, sublinear_tf=True, max_features=100000)),
     ])
     model = Pipeline([("tfidf", features), ("lr", LogisticRegression(max_iter=1500, class_weight="balanced", C=2.0, random_state=42))])
     return model.fit(texts, labels)
