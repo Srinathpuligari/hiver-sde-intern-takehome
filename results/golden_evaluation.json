@@ -1,0 +1,267 @@
+{
+  "n_human_annotated": 195,
+  "reply_rubric_means": {
+    "correctness": 0.96,
+    "groundedness": 1.0,
+    "completeness": 0.94,
+    "safety": 2.0,
+    "tone": 2.0
+  },
+  "intent_classification": {
+    "accuracy": 0.544,
+    "macro_f1": 0.523,
+    "per_intent": {
+      "account_access": {
+        "precision": 0.8666666666666667,
+        "recall": 0.65,
+        "f1-score": 0.7428571428571429,
+        "support": 20.0
+      },
+      "billing_charge": {
+        "precision": 0.5882352941176471,
+        "recall": 0.625,
+        "f1-score": 0.6060606060606061,
+        "support": 16.0
+      },
+      "cancellation": {
+        "precision": 0.8461538461538461,
+        "recall": 0.6875,
+        "f1-score": 0.7586206896551724,
+        "support": 16.0
+      },
+      "complaint": {
+        "precision": 0.5789473684210527,
+        "recall": 0.36666666666666664,
+        "f1-score": 0.4489795918367347,
+        "support": 30.0
+      },
+      "delivery_status": {
+        "precision": 0.7241379310344828,
+        "recall": 0.5675675675675675,
+        "f1-score": 0.6363636363636364,
+        "support": 37.0
+      },
+      "information_request": {
+        "precision": 0.10810810810810811,
+        "recall": 0.36363636363636365,
+        "f1-score": 0.16666666666666666,
+        "support": 11.0
+      },
+      "other": {
+        "precision": 0.3157894736842105,
+        "recall": 0.5,
+        "f1-score": 0.3870967741935484,
+        "support": 12.0
+      },
+      "product_issue": {
+        "precision": 0.8181818181818182,
+        "recall": 0.375,
+        "f1-score": 0.5142857142857142,
+        "support": 24.0
+      },
+      "refund_request": {
+        "precision": 0.9444444444444444,
+        "recall": 0.7727272727272727,
+        "f1-score": 0.85,
+        "support": 22.0
+      },
+      "security_privacy": {
+        "precision": 0.14285714285714285,
+        "recall": 0.25,
+        "f1-score": 0.18181818181818182,
+        "support": 4.0
+      },
+      "service_outage": {
+        "precision": 0.3,
+        "recall": 1.0,
+        "f1-score": 0.46153846153846156,
+        "support": 3.0
+      },
+      "accuracy": 0.5435897435897435,
+      "macro avg": {
+        "precision": 0.56668382669722,
+        "recall": 0.5598270791452609,
+        "f1-score": 0.5231170422978058,
+        "support": 195.0
+      },
+      "weighted avg": {
+        "precision": 0.6733811125002789,
+        "recall": 0.5435897435897435,
+        "f1-score": 0.5812314141925798,
+        "support": 195.0
+      }
+    },
+    "labels": [
+      "account_access",
+      "billing_charge",
+      "cancellation",
+      "complaint",
+      "delivery_status",
+      "information_request",
+      "other",
+      "product_issue",
+      "refund_request",
+      "security_privacy",
+      "service_outage"
+    ],
+    "confusion_matrix": [
+      [
+        13,
+        0,
+        0,
+        2,
+        0,
+        3,
+        2,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        10,
+        0,
+        1,
+        2,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        11,
+        0,
+        2,
+        2,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        11,
+        1,
+        12,
+        3,
+        0,
+        0,
+        3,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        2,
+        21,
+        4,
+        5,
+        1,
+        0,
+        2,
+        1
+      ],
+      [
+        0,
+        2,
+        0,
+        0,
+        3,
+        4,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        2,
+        0,
+        0,
+        0,
+        4,
+        6,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        2,
+        0,
+        6,
+        1,
+        9,
+        1,
+        1,
+        4
+      ],
+      [
+        0,
+        2,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        17,
+        0,
+        0
+      ],
+      [
+        2,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        3
+      ]
+    ]
+  },
+  "auto_handle": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "coverage": 0.026,
+    "unsafe_auto_handle_count": 5
+  },
+  "judge_human_agreement": {
+    "n": 50,
+    "spearman": 0.115,
+    "mae": 0.516,
+    "exact_agreement": 0.04,
+    "within_one": 0.98
+  }
+}

@@ -1,0 +1,554 @@
+{
+  "data_mode": "twcs_subsample",
+  "selected_brand": "AmazonHelp",
+  "brand_stats": {
+    "AmazonHelp": {
+      "pairs": 8471,
+      "mean_chars": 120.6
+    },
+    "AppleSupport": {
+      "pairs": 3342,
+      "mean_chars": 110.7
+    },
+    "Uber_Support": {
+      "pairs": 2609,
+      "mean_chars": 124.3
+    },
+    "SpotifyCares": {
+      "pairs": 1549,
+      "mean_chars": 105.0
+    },
+    "Tesco": {
+      "pairs": 1360,
+      "mean_chars": 115.2
+    },
+    "VirginTrains": {
+      "pairs": 1268,
+      "mean_chars": 122.3
+    },
+    "British_Airways": {
+      "pairs": 1220,
+      "mean_chars": 136.5
+    },
+    "comcastcares": {
+      "pairs": 1215,
+      "mean_chars": 114.0
+    },
+    "sainsburys": {
+      "pairs": 1144,
+      "mean_chars": 106.5
+    },
+    "O2": {
+      "pairs": 1098,
+      "mean_chars": 113.0
+    },
+    "AmericanAir": {
+      "pairs": 1042,
+      "mean_chars": 128.6
+    },
+    "Delta": {
+      "pairs": 1029,
+      "mean_chars": 112.2
+    },
+    "GWRHelp": {
+      "pairs": 987,
+      "mean_chars": 118.4
+    },
+    "ArgosHelpers": {
+      "pairs": 978,
+      "mean_chars": 114.9
+    },
+    "idea_cares": {
+      "pairs": 927,
+      "mean_chars": 118.7
+    }
+  },
+  "n_train": 6818,
+  "n_test": 1653,
+  "thread_overlap": 0,
+  "majority_baseline": {
+    "accuracy": 0.4828,
+    "per_intent": {
+      "account_access": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 23.0
+      },
+      "billing_charge": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 37.0
+      },
+      "cancellation": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 34.0
+      },
+      "complaint": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 22.0
+      },
+      "delivery_status": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 265.0
+      },
+      "information_request": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 359.0
+      },
+      "other": {
+        "precision": 0.4827586206896552,
+        "recall": 1.0,
+        "f1-score": 0.6511627906976745,
+        "support": 798.0
+      },
+      "product_issue": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 15.0
+      },
+      "refund_request": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 52.0
+      },
+      "security_privacy": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 27.0
+      },
+      "service_outage": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 21.0
+      },
+      "accuracy": 0.4827586206896552,
+      "macro avg": {
+        "precision": 0.0438871473354232,
+        "recall": 0.09090909090909091,
+        "f1-score": 0.059196617336152224,
+        "support": 1653.0
+      },
+      "weighted avg": {
+        "precision": 0.23305588585017836,
+        "recall": 0.4827586206896552,
+        "f1-score": 0.314354450681636,
+        "support": 1653.0
+      }
+    },
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        23,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        37,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        34,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        22,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        265,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        359,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        798,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        15,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        52,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        27,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        21,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "labels": [
+      "account_access",
+      "billing_charge",
+      "cancellation",
+      "complaint",
+      "delivery_status",
+      "information_request",
+      "other",
+      "product_issue",
+      "refund_request",
+      "security_privacy",
+      "service_outage"
+    ]
+  },
+  "tfidf_logistic_regression": {
+    "accuracy": 0.8421,
+    "per_intent": {
+      "account_access": {
+        "precision": 0.8,
+        "recall": 0.6956521739130435,
+        "f1-score": 0.7441860465116279,
+        "support": 23.0
+      },
+      "billing_charge": {
+        "precision": 0.9090909090909091,
+        "recall": 0.8108108108108109,
+        "f1-score": 0.8571428571428571,
+        "support": 37.0
+      },
+      "cancellation": {
+        "precision": 0.9117647058823529,
+        "recall": 0.9117647058823529,
+        "f1-score": 0.9117647058823529,
+        "support": 34.0
+      },
+      "complaint": {
+        "precision": 0.8333333333333334,
+        "recall": 0.9090909090909091,
+        "f1-score": 0.8695652173913043,
+        "support": 22.0
+      },
+      "delivery_status": {
+        "precision": 0.8900709219858156,
+        "recall": 0.9471698113207547,
+        "f1-score": 0.9177330895795247,
+        "support": 265.0
+      },
+      "information_request": {
+        "precision": 0.6928571428571428,
+        "recall": 0.8105849582172702,
+        "f1-score": 0.7471116816431322,
+        "support": 359.0
+      },
+      "other": {
+        "precision": 0.8993288590604027,
+        "recall": 0.8395989974937343,
+        "f1-score": 0.8684381075826313,
+        "support": 798.0
+      },
+      "product_issue": {
+        "precision": 0.7333333333333333,
+        "recall": 0.7333333333333333,
+        "f1-score": 0.7333333333333333,
+        "support": 15.0
+      },
+      "refund_request": {
+        "precision": 0.9230769230769231,
+        "recall": 0.9230769230769231,
+        "f1-score": 0.9230769230769231,
+        "support": 52.0
+      },
+      "security_privacy": {
+        "precision": 1.0,
+        "recall": 0.37037037037037035,
+        "f1-score": 0.5405405405405406,
+        "support": 27.0
+      },
+      "service_outage": {
+        "precision": 0.7777777777777778,
+        "recall": 0.6666666666666666,
+        "f1-score": 0.717948717948718,
+        "support": 21.0
+      },
+      "accuracy": 0.8421052631578947,
+      "macro avg": {
+        "precision": 0.8518758096725446,
+        "recall": 0.7834654236523789,
+        "f1-score": 0.8028037473302677,
+        "support": 1653.0
+      },
+      "weighted avg": {
+        "precision": 0.8505577546552854,
+        "recall": 0.8421052631578947,
+        "f1-score": 0.8421406470281778,
+        "support": 1653.0
+      }
+    },
+    "confusion_matrix": [
+      [
+        16,
+        0,
+        0,
+        0,
+        0,
+        6,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        30,
+        0,
+        0,
+        2,
+        3,
+        0,
+        0,
+        2,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        31,
+        0,
+        2,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        20,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        251,
+        7,
+        5,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        2,
+        5,
+        291,
+        59,
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        2,
+        0,
+        0,
+        0,
+        15,
+        103,
+        670,
+        3,
+        2,
+        0,
+        3
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        2,
+        0,
+        2,
+        11,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        3,
+        0,
+        0,
+        0,
+        48,
+        0,
+        0
+      ],
+      [
+        2,
+        2,
+        2,
+        0,
+        2,
+        5,
+        4,
+        0,
+        0,
+        10,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        0,
+        3,
+        3,
+        0,
+        0,
+        0,
+        14
+      ]
+    ],
+    "labels": [
+      "account_access",
+      "billing_charge",
+      "cancellation",
+      "complaint",
+      "delivery_status",
+      "information_request",
+      "other",
+      "product_issue",
+      "refund_request",
+      "security_privacy",
+      "service_outage"
+    ]
+  },
+  "IMPORTANT": "Labels are deterministic taxonomy proposals; replace with human golden labels before reporting headline scores."
+}

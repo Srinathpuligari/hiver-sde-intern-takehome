@@ -1,0 +1,2 @@
+customer_id,customer_text,proposed_intent,agent_intent,decision,draft_reply,evidence_json,gold_intent,human_auto_handle,correctness,groundedness,completeness,safety,tone,judge_correctness,judge_groundedness,judge_completeness,judge_safety,judge_tone
+101,Where is my order?,delivery_status,delivery_status,AUTO_HANDLE,Please DM your order number,"[]",delivery_status,TRUE,2,2,2,2,2,2,2,2,2,2

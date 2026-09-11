@@ -1,0 +1,18 @@
+{
+  "majority_baseline": {
+    "accuracy": 0.062,
+    "macro_f1": 0.011
+  },
+  "word_tfidf_lr": {
+    "accuracy": 0.533,
+    "macro_f1": 0.514
+  },
+  "char_tfidf_lr": {
+    "accuracy": 0.564,
+    "macro_f1": 0.522
+  },
+  "hybrid_word_char_tfidf_lr": {
+    "accuracy": 0.574,
+    "macro_f1": 0.533
+  }
+}
